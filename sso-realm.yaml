@@ -1,0 +1,16 @@
+kind: KeycloakRealm
+apiVersion: keycloak.org/v1alpha1
+metadata:
+  name: quarkus-deep-dive-realm
+  namespace: deep-dive-quarkus
+  labels:
+    app: sso
+spec:
+  realm:
+    id: quarkus-deep-dive
+    realm: quarkus-deep-dive
+    enabled: true
+    displayName: Quarkus Deep Dive Realm
+  instanceSelector:
+    matchLabels:
+      app: sso

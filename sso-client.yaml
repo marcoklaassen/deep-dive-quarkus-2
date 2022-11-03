@@ -1,0 +1,15 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakClient
+metadata:
+  labels:
+    app: sso
+  name: feedback-form-client
+  namespace: deep-dive-quarkus
+spec:
+  client:
+    clientId: feedback-form-client
+    clientAuthenticatorType: client-secret
+    directAccessGrantsEnabled: true
+  realmSelector:
+    matchLabels:
+      app: sso

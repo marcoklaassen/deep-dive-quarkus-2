@@ -1,0 +1,21 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakUser
+metadata:
+  name: feedback-user
+  labels:
+    app: sso
+  namespace: deep-dive-quarkus
+spec:
+  realmSelector:
+    matchLabels:
+      app: sso
+  user:
+    username: feedback-user
+    firstName: Iron
+    lastName: Man
+    email: iron.man@avengers.com
+    enabled: true
+    emailVerified: false
+    credentials:
+      - type: "password"
+        value: "password"

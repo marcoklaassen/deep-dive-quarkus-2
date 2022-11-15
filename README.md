@@ -2,11 +2,11 @@
 
 ## Related Repositories
 
-**Use the branch `quarkus-deep-dive-2` in the following repos.**
+**Use the branch `kafka-deep-dive` in the following repos.**
 
-* [Feedback Basic Infrastructure](https://github.com/marcoklaassen/deep-dive-serverless/tree/quarkus-deep-dive-2)
-* [Feedback Form](https://github.com/marcoklaassen/deep-dive-serverless-feedback-form/tree/quarkus-deep-dive-2)
-* [Feedback Persistence](https://github.com/marcoklaassen/deep-dive-serverless-feedback-persistence/tree/quarkus-deep-dive-2)
+* [Feedback Basic Infrastructure](https://github.com/marcoklaassen/deep-dive-serverless/tree/kafka-deep-dive)
+* [Feedback Form](https://github.com/marcoklaassen/deep-dive-serverless-feedback-form/tree/kafka-deep-dive)
+* [Feedback Persistence](https://github.com/marcoklaassen/deep-dive-serverless-feedback-persistence/tree/kafka-deep-dive)
 
 ## SSO Installation
 
@@ -23,11 +23,11 @@ Apply `sso-*.yaml` resources:
 Get the route
 
 ```
-oc get route keycloak -n deep-dive-quarkus --template=https://{{.spec.host}}
+oc get route keycloak -n deep-dive-kafka --template=https://{{.spec.host}}
 ```
 
 Get the admin password
 
 ```
-oc get secret -n deep-dive-quarkus credential-deep-dive-quarkus -o json | jq -r '.data."ADMIN_PASSWORD"' | base64 -d
+oc get secret -n deep-dive-kafka credential-deep-dive-kafka -o json | jq -r '.data."ADMIN_PASSWORD"' | base64 -d
 ```

@@ -4,7 +4,7 @@ metadata:
   name: feedback-user
   labels:
     app: sso
-  namespace: deep-dive-quarkus
+  namespace: deep-dive-kafka
 spec:
   realmSelector:
     matchLabels:

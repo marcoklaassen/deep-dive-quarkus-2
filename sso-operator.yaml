@@ -4,7 +4,7 @@ metadata:
   labels:
     operators.coreos.com/rhsso-operator.deep-dive-quarkus: ''
   name: rhsso-operator
-  namespace: deep-dive-quarkus
+  namespace: deep-dive-kafka
 spec:
   channel: stable
   installPlanApproval: Automatic

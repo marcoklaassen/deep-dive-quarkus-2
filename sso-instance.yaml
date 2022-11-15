@@ -1,10 +1,10 @@
 apiVersion: keycloak.org/v1alpha1
 kind: Keycloak
 metadata:
-  name: deep-dive-quarkus
+  name: deep-dive-kafka
   labels:
     app: sso
-  namespace: deep-dive-quarkus
+  namespace: deep-dive-kafka
 spec:
   externalAccess:
     enabled: true

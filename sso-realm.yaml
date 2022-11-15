@@ -1,14 +1,14 @@
 kind: KeycloakRealm
 apiVersion: keycloak.org/v1alpha1
 metadata:
-  name: quarkus-deep-dive-realm
-  namespace: deep-dive-quarkus
+  name: kafka-deep-dive-realm
+  namespace: deep-dive-kafka
   labels:
     app: sso
 spec:
   realm:
-    id: quarkus-deep-dive
-    realm: quarkus-deep-dive
+    id: kafka-deep-dive
+    realm: kafka-deep-dive
     enabled: true
     displayName: Quarkus Deep Dive Realm
   instanceSelector:
